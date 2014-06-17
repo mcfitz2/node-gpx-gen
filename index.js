@@ -30,6 +30,6 @@ var createGPX = function(segments) {
     if (obj.gpx.trk["#list"].length > 0) { 	
 	return builder.create(obj).end();
     }
-    return new Error("No segments");
+    return null;
 };
 module.exports = createGPX;
